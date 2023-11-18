@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     min-height: 100vh;
     overflow: hidden;
     background-color: #282c34;
@@ -65,8 +64,8 @@ li button {
     background-color: #e74c3c;
     color: #fff;
     border: none;
-    width: 18px; /* Agora a bolinha é um pouco menor */
-    height: 18px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -80,7 +79,7 @@ li button.dark-mode {
 }
 
 input {
-    width: calc(100% - 24px); /* Ajuste para o mesmo tamanho da lista */
+    width: calc(100% - 20px); /* Ajuste para o mesmo tamanho da lista */
     padding: 12px;
     border: none;
     border-radius: 0;
@@ -88,6 +87,8 @@ input {
     color: #ffffff;
     z-index: 1;
     transition: background-color 0.3s ease-in-out;
+    position: sticky;
+    bottom: 0;
 }
 
 input.dark-mode {
@@ -106,12 +107,6 @@ li button:hover {
 
 input:hover {
     background-color: #1f2c38;
-}
-
-/* Remove sombras e bordas arredondadas para um visual mais minimalista */
-.container, li, input {
-    box-shadow: none;
-    border-radius: 0;
 }
 
 /* Adiciona transição suave ao ícone do botão */
